@@ -9,4 +9,10 @@ func main() {
 	} else {
 		fmt.Printf("The value is false\n")
 	}
+
+	if !bool1 {
+		fmt.Printf("The value is false\n")
+	} else {
+		fmt.Printf("The value is true\n")
+	}
 }

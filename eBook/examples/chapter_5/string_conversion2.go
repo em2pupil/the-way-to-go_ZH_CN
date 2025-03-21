@@ -18,6 +18,10 @@ func main() {
 		fmt.Printf("orig %s is not an integer - exiting with error\n", orig)
 		return
 	}
+	if _, err := strconv.Atoi(orig); err != nil {
+		fmt.Printf("orig %s is not an integer - exiting with error\n", orig)
+		return
+	}
 	fmt.Printf("The integer is %d\n", an)
 	an = an + 5
 	newS = strconv.Itoa(an)

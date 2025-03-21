@@ -10,6 +10,7 @@ import (
 func main() {
 	var x float64 = 3.4
 	fmt.Println("type:", reflect.TypeOf(x))
+	fmt.Println("type kind:", reflect.TypeOf(x).Kind())
 	v := reflect.ValueOf(x)
 	fmt.Println("value:", v)
 	fmt.Println("type:", v.Type())
